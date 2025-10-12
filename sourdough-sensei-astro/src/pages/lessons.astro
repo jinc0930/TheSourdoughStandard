@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import YouTube from '../components/YouTube.astro';
+import TikTok from '../components/TikTok.astro';
+---
+<BaseLayout title="Lessons — Sourdough Sensei" description="Curated sourdough lessons with short videos and quick notes.">
+  <h1 style="margin-top:0">Lessons</h1>
+  <div class="grid" style="margin-top:12px">
+    <section class="card">
+      <h2>Autolyse & mixing</h2>
+      <p>Why a short autolyse helps absorption and gentle gluten development. Replace the ID below with your own video.</p>
+      <YouTube id="VIDEO_ID_HERE" title="Autolyse & Mixing" />
+      <details style="margin-top:10px"><summary>Key ratios</summary>
+        <ul>
+          <li>Flour: 100%</li>
+          <li>Water: 70% (adjust 68–78% based on flour strength)</li>
+          <li>Starter: 20% (baker’s % of flour)</li>
+          <li>Salt: 2%</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="card">
+      <h2>Starter feeding (TikTok)</h2>
+      <p>Embed any TikTok post by pasting the full URL below.</p>
+      <TikTok url="TIKTOK_URL_HERE" />
+      <p style="color:var(--muted);font-size:.95rem;margin-top:10px">Tip: TikTok’s embed script loads client‑side; the page will still be static/fast.</p>
+    </section>
+  </div>
+</BaseLayout>
