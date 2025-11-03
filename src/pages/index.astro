@@ -1,14 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
+
 <BaseLayout title="Sourdough Sensei — Learn sourdough fast">
   <section class="hero card">
     <span class="badge">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 3c3 0 7 1.5 7 6.5S15 21 12 21 5 16.5 5 9.5 9 3 12 3Z" stroke="currentColor" stroke-width="1.5"/></svg>
-      Beginner to artisan, step‑by‑step
+      Beginner to artisan, step-by-step
     </span>
     <h1>Master sourdough without the fluff</h1>
-    <p>Bite‑size lessons, video embeds, and printable formulas. Built for speed, clarity, and repetition.</p>
+    <p>Bite-size lessons, video embeds, and printable formulas. Built for speed, clarity, and repetition.</p>
     <div>
       <a class="button" href="/lessons">Start with Lessons →</a>
     </div>
@@ -20,7 +21,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <ul>
         <li>Short videos you can rewatch during bakes</li>
         <li>Clear hydration, timing, and temperature targets</li>
-        <li>Mobile‑first pages for quick reference</li>
+        <li>Mobile-first pages for quick reference</li>
       </ul>
     </div>
     <div class="card">
@@ -33,3 +34,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  main {
+    position: relative;
+    background-image: url('/img.png');
+    background-repeat: no-repeat;
+    background-size: 220px;
+    background-position: top right;
+    /* You can play with these for your preferred look */
+    min-height: 100vh;
+  }
+
+  /* Optional: subtle overlay to make text pop */
+  .hero {
+    position: relative;
+    z-index: 2;
+  }
+
+  main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6); /* adjust opacity if needed */
+    z-index: 1;
+  }
+</style>

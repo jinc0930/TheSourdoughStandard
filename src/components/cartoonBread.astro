@@ -1,0 +1,23 @@
+---
+const imagePath = '/img.png'; // files in "public" are served from the root
+---
+
+<img
+  src={imagePath}
+  alt="Cartoon bread logo"
+  class="cartoon-bread"
+/>
+
+<style>
+  .cartoon-bread {
+    width: var(--bread-size, 120px);
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    transition: transform 0.2s ease;
+  }
+
+  .cartoon-bread:hover {
+    transform: scale(1.05) rotate(-2deg);
+  }
+</style>
